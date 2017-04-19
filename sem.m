@@ -1,0 +1,1 @@
+function sem = sem(vals)% function sem = sem(vals)% calculates standard error of the meanif isempty(vals)	sem = nan;	return;endssn = size(vals,1);if ssn == 1	ssn = size(vals,2);endsem = std(vals);sem = sem/sqrt(ssn);

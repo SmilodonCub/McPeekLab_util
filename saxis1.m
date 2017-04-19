@@ -1,0 +1,1 @@
+set(gca, 'xtick', [100 200 300 400 500]);set(gca, 'xticklabel', [-200 -100 0 100 200]);set(gca, 'box', 'off');%set(gca, 'tickdir', 'out');%set(gca, 'ticklength', get(gca, 'ticklength') .* 2);h = vlin(300, 'k');if exist('min_width')	set(h, 'linewidth', min_width);endif exist('page')	if page == 0		set(h, 'color', [1 1 1]);	endend

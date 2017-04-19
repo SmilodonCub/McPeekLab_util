@@ -1,0 +1,1 @@
+% nanmeanc.m% function y = nanmeanc(x)% computes nanmean along COLUMNS of x% if x only has one column, return it unchanged% JBB 7/31/01function y = nanmeanc(x)if size(x, 2) < 2,	y = x;else	y = mynanmean(x')';end

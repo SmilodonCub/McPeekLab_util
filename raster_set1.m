@@ -1,0 +1,1 @@
+%set(gca, 'visible', 'off');% set(gca, 'xticklabel', []);% set(gca, 'yticklabel', []);% set(gca, 'ytick', []);% set(gca, 'tickdir', 'out');% set(gca, 'ticklength', get(gca, 'ticklength') .* 2);

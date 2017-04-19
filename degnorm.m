@@ -1,0 +1,1 @@
+function n1 = degnorm(n1)zz = find(n1 >= 360);n1(zz) = n1(zz) - 360;zz = find(n1 < 0);n1(zz) = n1(zz) + 360;

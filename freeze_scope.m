@@ -1,0 +1,1 @@
+% freeze_scope.m% callback utility to freeze scope window (no longer updated in trial block)% JBB 3/3/04function freeze_scope(obj)h0 = get(obj, 'parent');if get(obj, 'value'),	set(h0, 'tag', 'frozen_scope_window');else	set(h0, 'tag', 'scope_window');end

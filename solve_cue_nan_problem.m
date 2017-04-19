@@ -1,0 +1,1 @@
+function gvals = solve_cue_nan_problem(gvals)if length(gvals(1).disp_time) < 10	return;endfor i = 1:length(gvals)	if isnan(gvals(i).disp_time(10))		gvals(i).disp_time(10) = gvals(i).cue.onset_frame .* 0.013333333 + gvals(i).disp_time(2);	else		break	endend

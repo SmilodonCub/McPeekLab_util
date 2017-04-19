@@ -1,0 +1,1 @@
+function dv% dv : data viewer[fname pname] = uigetfile('*', 'Open Data File');if ~ischar(fname)	return;endfspec = [pname fname];global gvals gparsload(fspec);offline_spawn_scopewindow([], 0);set(gcf, 'numbertitle', 'off')set(gcf, 'name', fname);

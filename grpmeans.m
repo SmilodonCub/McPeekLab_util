@@ -1,0 +1,1 @@
+function g1 = grpmeans(cats, lats)[a1 a2 a3 a4] = catstat(cats, lats);g1 = round(a1*1000);

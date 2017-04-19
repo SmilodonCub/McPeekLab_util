@@ -1,0 +1,1 @@
+function filt1 = filteye(dat);% function filt1 = filteye(dat);load buturbutrdeffilt1 = filtfilt(nom, denom, dat);

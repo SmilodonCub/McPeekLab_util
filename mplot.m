@@ -1,0 +1,1 @@
+function mplot = stdplot(vals, col)[a b c d] = size(vals);m = zeros(a,c);if b==0	mplot=plot(0,0);	returnendif b > 1	for i=1:c   		m(:,i) = mean(vals(:,:,i)')';	end;	if nargin == 1		mplot = plot(m);	else  		 mplot = plot(m, col);	end;else	if nargin == 1		mplot = plot(vals(:,1,:));	else		mplot = plot(vals(:,1,:), col);	end;end;

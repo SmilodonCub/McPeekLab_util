@@ -1,0 +1,1 @@
+function out = padassign(in, start1, end1)% function out = padassign(in, start1, end1)lengthin = length(in);if end1 > lengthin	myend = length(in);	pad2 = ones(end1-lengthin,1) .* nan;else	myend = end1;	pad2 = [];endif start1 < 1	mystart = 1;	pad1 = ones(-start1+1,1) .* nan;else	mystart = start1;	pad1 = [];endout = [pad1; in(mystart:myend); pad2];

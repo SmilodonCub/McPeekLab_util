@@ -1,0 +1,1 @@
+set(gca, 'xlim', [378 1400]);set(gca, 'xtick', [478:100:1500]);%set(gca, 'xticklabel', [0:200:1300]);set(gca, 'xticklabel', []);h(1) = vlin(478, 'k');h(2) = vlin(800, 'k');if exist('page')	if page == 0		set(h, 'linewidth', 2);		set(h, 'color', [1 1 1]);			else		set(h, 'linewidth', 1);		set(h, 'color', [0 0 0]);			endend

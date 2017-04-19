@@ -1,0 +1,1 @@
+% change_gauss.m% function change_gauss(h)% change gaussian width for associated spike channel% JBB 1/26/04function change_gauss(h)h_box = get(h, 'UserData');uidata = get(h_box, 'Userdata');uidata.gauss_width = str2num(get(h, 'String'));set(h_box, 'UserData', uidata);
